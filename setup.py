@@ -56,11 +56,11 @@ if USE_CV & (get_libs("opencv") == '' or get_cflags("opencv") == ''):
 
 if USE_GPU:
     if USE_CV:
-        build_branch_name = "yolo34py-intergration-v2"
+        build_branch_name = "master"
     else:
-        build_branch_name = "yolo34py-intergration-nocv-v2"
+        build_branch_name = "master"
 else:
-    build_branch_name = "yolo34py-intergration-nogpu-v2"
+    build_branch_name = "master"
     if "DARKNET_HOME" not in os.environ:
         if USE_CV:
             logging.warning(
